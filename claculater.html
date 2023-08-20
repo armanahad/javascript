@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>addition and subtraction </title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+                    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+                    crossorigin="anonymous">
+
+</head>
+
+<body>
+          <div class="container">
+                    <div class="card">
+                             <h3 class="card-header">Calculater</h3>
+                             <div class="card-body">
+                              <label for="First"><h4>First:-</h4></label>
+                              <input type="number" id="first">
+                              <label for="second"><h4>Second:-</h4></label>
+                              <input type="number" id="second">
+                              <span class="btn btn-primary" onclick="calc('add')">Addition</span>
+                              <span class="btn btn-danger" onclick="calc('sub')">Subtract</span>
+                             
+                             </div>
+                             <p class="output"></p>
+                    </div>
+          </div>
+          <script src="./calculater.js"></script>
+</body>
+
+</html>
