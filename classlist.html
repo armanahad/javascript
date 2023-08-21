@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <style>
+             .glyphicon-certificate{
+                    float: right;
+                    
+             }
+             .glyphicon-certificate:hover{
+                    cursor: pointer;
+             }
+             .newStyle{
+                    color: white;
+                    background-color: black;
+              
+                    font-size: x-large
+             }
+       </style>
+
+</head>
+
+<body>
+          <div class="container">
+                    <div class="panel panel-danger">
+                              <h2 class="panel-heading ">changer panel body theme <span class="glyphicon glyphicon-certificate" onclick="changeMode()"></span></h2>
+                              <div class="panel-body " id="body">
+                                        Lorem, ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Voluptatum sed, nihil distinctio nulla adipisci officiis. Delectus veniam
+                                        tenetur voluptas? Explicabo, dicta quisquam inventore ex neque numquam odio
+                                        optio corporis ab fuga sed, quae vero nostrum maiores iure dolorum id minima
+                                        nisi consectetur? Possimus, minus. Quia quod modi minima at veritatis explicabo
+                                        reprehenderit? Quae, in voluptas. Aliquid voluptates rem recusandae assumenda
+                                        dolor fuga, nam, cum voluptate quasi minima tenetur deserunt adipisci explicabo
+                                        quibusdam delectus iusto voluptas eligendi autem quas. Cum impedit, ullam, magni
+                                        consectetur quo laudantium accusantium at laborum distinctio nobis minima?
+                                        Facilis, aperiam, nostrum ratione voluptas architecto maxime eligendi voluptate
+                                        quibusdam dolores eos dolore omnis dolorum sed mollitia placeat explicabo ullam!
+                                        Asperiores error at dolores nam ea quia sed molestias ut qui cum, voluptatem
+                                        tempora possimus laborum provident aut, quaerat, optio sint! Quia eaque alias
+                                        eum distinctio quam adipisci aut qui. Delectus earum possimus, perferendis iusto
+                                        officiis dolor sit doloremque commodi officia, libero natus omnis cumque odio
+                                        minus! Similique earum sequi quod ab reiciendis repellat nemo deserunt nisi.
+                                        Quia nulla non, harum cum deserunt quas magni vitae, distinctio repudiandae
+                                        libero fugit debitis corporis sint quo, porro voluptates iste laborum explicabo
+                                        nobis? Quibusdam delectus ipsam, nulla sint placeat nostrum fugit. Labore quas
+                                        nam, facere aliquid quibusdam eos consectetur illum, recusandae quia ex, eius
+                                        cum assumenda ipsa laborum distinctio repellat deleniti blanditiis. Recusandae
+                                        unde incidunt tempore laudantium ducimus consequuntur culpa provident numquam,
+                                        eligendi esse facilis autem? consectetur adipisicing elit. Voluptatibus minima
+                                        sit repudiandae!
+                              </div>
+                    </div>
+          </div>
+          <script>
+                    const changeMode = () =>{
+                              const mybody=document.getElementById('body').classList;
+                              mybody.toggle("newStyle");
+                    }
+          </script>
+</body>
+
+</html>
