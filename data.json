@@ -1,0 +1,18 @@
+[
+          {
+                    "name":"the Avengers",
+                    "rating":5,
+                    "type":"sci-fi,action"
+          }
+          {
+                    "name":"hary potter",
+                    "rating":8,
+                    "type":"drama"
+          }
+          {
+                    "name":"frozen",
+                    "rating":9,
+                    "type":"fantasy"
+          }
+]
+//json => javascript object notation

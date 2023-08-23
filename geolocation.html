@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <button onclick="geolocation()">Geolocation</button>
+          <p id="out"></p>
+          <p id="location"></p>
+          <p id="weather"></p>
+         
+          <script>
+                    let x=document.getElementById("out");
+                    let y=document.getElementById('weather')
+                    let z=document.getElementById("location")
+                    function geolocation(){
+                              if(navigator.geolocation){
+                                        navigator.geolocation.getCurrentPosition(showPosition);//callback function
+                                        //calling a function inside another function is called callback function 
+                                     
+                              }
+                              else{
+                                        x.innerText = "Geo not supported"
+                              }
+
+                              function showPosition(data){
+                                        console.log(data.coords.latitude);
+                                        console.log(data.coords.longitude);
+                                        let lat=data.coords.latitude;
+                                        let lon=data.coords.longitude;
+                                         x.innerText = `latitude is ${lat} and longitude is ${lon}`;
+                                       
+                                       const url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f833e9c8411f973929f76471b39afdec`
+                                       //api calling
+                                       fetch(url,{method:"GET"})
+                                       //return promise
+                                       .then((data)=>data.json())
+                                       .then((res)=>{
+                                        console.log("weather data",res)
+                                       y.innerText=`temperature of the day is ${res.main.temp}`;
+                                       z.innerText =`city name is ${res.name}`
+                                        // console.log("weather data",res.name)
+                                        // console.log("weather datawith country name",res.sys.country)
+                                       
+                                       });
+                              }
+                    }
+          </script>
+</body>
+</html>
